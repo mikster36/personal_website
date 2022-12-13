@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/site.webmanifest">
+    <title>Michael Ortega — Portfolio</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body navbar-light py-3 shadow-sm ">
+        <div class="container">
+            <a href="#" class="navbar-brand"></a>
+
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id=navmenu>
+                <!-- ms-auto to move to the right -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#About Me" class="nav-link font-monospace">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Skills" class="nav-link font-monospace">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Projects" class="nav-link font-monospace">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Future" class="nav-link font-monospace">Future</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="media/MichaelOrtega_Resume.pdf" class="nav-link font-monospace">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--
+    Intro
+    <section class="bg-light text-dark p-5 text-center">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="display-1"> Michael Ortega</h1>
+                    <p class="lead pt-2 font-monospace">I'm a current Computer science student at Georgia Tech, specializing
+                    in machine learning and data modeling. As I'm minoring in Sustainable cities,
+                    I hope to lead innovation to the fight against climate change.</p>
+                </div>
+                <div class="px-5">
+                    <img class="img-fluid d-none d-md-block" src="media/bounce.gif" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- About Me -->
+    <section id="About Me" class="bg-white p-5 text-left">
+        <div class="container">
+            <div class="row justify-content-between mb-lg-5">
+                <div class="mb-4">
+                </div>
+                <div class="col-lg mb-3 me-5">
+                    <img src="media/me3.png" class="img-fluid mb-2" alt="Image of Michael Ortega with a box around his face detecting that he is 0.983 person">
+                    <div class="d-flex justify-content-center">
+                        <ul class="header text-center list-unstyled">
+                            <li id="header" class="h4 font-monospace">
+                                <p>Computer Science Student</p>
+                            </li>
+                            <li class="h4 font-monospace">
+                                <a href="https://www.cc.gatech.edu/" class="link-dark">Georgia Institute of Technology</a>
+                            </li>
+                            <li class="mt-3 h4 font-monospace">
+                                <a href="mailto: michaelrortega@pm.me" class="link-dark">michaelrortega_at_pm_dot_me</a>
+                            </li>
+                            <li class="h4 font-monospace">
+                                <div class="mt-4 row justify-content-center">
+                                    <div class="col-auto">
+                                        <a href="https://twitter.com/downbadbot" class="link-dark">
+                                            <i class="bi bi-twitter enlarged" role="link" aria-label="GitHub"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="https://github.com/mikster36" class="link-dark">
+                                            <i class="bi bi-github enlarged" role="link" aria-label="GitHub"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="https://www.linkedin.com/in/michaelrortega45/" class="link-dark">
+                                            <i class="bi bi-linkedin enlarged" role="link" aria-label="GitHub"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="header display-5 fw-bold">
+                        About Me
+                    </h1>
+                    <div class="mt-3">
+                        <p id="bio" class="text-body font-monospace">
+                            I'm Michael, an aspiring software engineer researcher studying computer science. I'm heavily
+                            interested in machine learning and the intersection between optimization and environmental
+                            sustainability.<br><br>
+                            I plan to pursue a Master's in CS and, eventually, a PhD in Machine Learning.<br><br>
+                            I care about collaborating, learning, and finding solutions to even the smallest things. In
+                            my free time, I enjoy producing <a href="https://mikster36.bandcamp.com/" class="link">music</a> and skateboarding.
+                        </p>
+
+
+                    </div>
+                    <div class="row row-1 mt-5 justify-content-center">
+                        <div class="col-sm-8">
+                            <h1 class="header display-6 fw-bold">
+                                Education
+                            </h1>
+                            <ul class="icon list-group-flush list-inline mt-3 ">
+                                <div class="container justify-content-start">
+                                    <div class="row">
+                                        <i class="col-1 align-self-center bi-mortarboard-fill"> </i>
+                                        <div class="col">
+                                            <li class="mt-2 font-monospace fw-bold">
+                                                Candidate for BCompSc, Graduating 2026
+                                            </li>
+                                            <li class="mt-1 font-monospace small">
+                                                Georgia Institute of Technology
+                                            </li>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="container justify-content-start">
+                                    <div class="row">
+                                        <i class="col-1 align-self-center bi-mortarboard-fill"> </i>
+                                        <div class="col">
+                                            <li class="mt-2 font-monospace fw-bold">
+                                                Associate of Arts, Jan 2019 - May 2022
+                                            </li>
+                                            <li class="mt-1 font-monospace small">
+                                                Broward College
+                                            </li>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="box col-sm">
+                            <h1 class="header display-6 mt-1 fw-bold">
+                                Interests
+                            </h1>
+                            <ul class="list-group-flush text-start ms-2 mt-3">
+                                <li class="list-group-item-light font-monospace">
+                                    Machine learning
+                                </li>
+                                <li class="list-group-item-light font-monospace">
+                                    Optimization
+                                </li>
+                                <li class="list-group-item-light font-monospace">
+                                    Mod & simulation
+                                </li>
+                                <li class="list-group-item-light font-monospace">
+                                    Climate change
+                                </li>
+                                <li class="list-group-item-light font-monospace">
+                                    Data science
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="Skills" class="bg-light p-5 text-center">
+        <div class="container">
+            <div class="my-lg-5">
+                <div class="mb-4">
+                    <h1 class="display-5 header fw-bold mb-4">
+                        Skills
+                    </h1>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between px-5">
+                        <div class="col">
+                            <i class="large-icon bi bi-code-square"></i>
+                            <i class="large-icon bi bi-filetype-py"></i>
+                            <div>
+                                <h1 class="h3 mt-1 ">
+                                    Programming
+                                </h1>
+                                <p class="font-monospace text-center">
+                                    <b> Python</b> (TensorFlow, Requests, Pandas/NumPy), Java, HTML/CSS, Bash
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <i class="large-icon bi bi-calendar2-week"></i>
+                            <i class="large-icon bi bi-chat-dots"></i>
+                            <div>
+                                <h1 class="h3 mt-1 ">
+                                    Teamwork & Organization
+                                </h1>
+                                <p class="font-monospace text-center">
+                                    GitHub, Communication, <b>Responsibility</b> & Timeliness
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <i class="large-icon bi bi-pencil-square"></i>
+                            <i class="large-icon bi bi-filetype-doc"></i>
+                            <div>
+                                <h1 class="h3 mt-1 ">
+                                    Documentation
+                                </h1>
+                                <p class="font-monospace text-center">
+                                    Formal and <b>Succinct</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="Projects" class="bg-white p-5 text-center">
+        <div class="container">
+            <div class="my-lg-5">
+                <h1 class="display-5 header fw-bold mb-4">
+                    Projects
+                </h1>
+            </div>
+            <div class="row justify-content-between my-lg-5">
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                DownBadBot
+                            </h5>
+                            <p class="card-text my-3 font-monospace">
+                                Twitter bot that posts the music I listen to.
+                            </p>
+                            <button type="button" onclick="window.open('https://github.com/mikster36/downBadBot', '_blank')" class="btn btn-light mb-4 font-monospace">
+                                <i class="bi bi-git "></i> Source code
+                            </button>
+                            <a class="twitter-timeline my-2" data-height="570vw" href="https://twitter.com/downbadbot?ref_src=twsrc%5Etfw">
+                                Tweets by downbadbot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Work in Progress
+                            </h5>
+                            <p class="card-text">
+                                I promise. I'm busy.
+                            </p>
+                            <img src="media/brb.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="card mt-lg-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Work in Progress 2
+                            </h5>
+                            <p class="card-text">
+                                I <em>promise</em>.
+                            </p>
+                            <img src="media/kis.gif" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between mb-5">
+
+                <!-- Yeah Okay -->
+                <div class="col-lg">
+                    <img src="media/album%20cover.jpg" class="img-fluid mb-3" alt="">
+                </div>
+                <div class="col-lg mt-1 mx-3">
+                    <h1 class="display-4 mb-2">Yeah Okay</h1>
+                    <h3 class="lead fw-bold "> September 5, 2021</h3>
+                    <h3 class="lead fw-bold"> 18 songs</h3>
+                    <h3 class="lead fw-bold"> 28 minutes</h3>
+                    <p class="lead mt-2">
+                        This is my first album. Although it's composed entirely of beats, it's more so an album
+                        than it is a beat tape due to its structure and composition. I made these beats in my bedroom
+                        during the summer of 2021, during quarantine, when I was first getting the hang of producing.
+                        I played the bass on 'Discipline', 'Midnight on the Moon', 'Eternal' (the second half of 'Other
+                        Planets / Eternal'). I programmed the drums on all tracks except "Tribe's Drums" and 'Traveling'.
+                        The beats draw heavily on foreign samples from the 70s, 80s and 90s, including 'The Mail Troika'
+                        by Melodia and 'Sihirbaz' by Gökçen Kaynatan. Cover art by me.
+                    </p>
+                    <div class="row justify-content-between gap-2">
+                        <div class="col-md">
+                            <button type="button" class="btn btn-light text-nowrap">
+                                <a class="btn btn-light btn-sm"
+                                   href="https://distrokid.com/hyperfollow/mikster36/yeah-okay"
+                                   target="_blank">Listen Now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between mb-5">
+                <!-- Donnie Darko Demos -->
+                <div class="col-lg">
+                    <img src="media/donnie%20darko%20demos.jpg" class="img-fluid mb-3" alt="">
+                </div>
+                <div class="col-lg mt-1 mx-3">
+                    <h1 class="display-4 mb-1">Donnie Darko Demos</h1>
+                    <h3 class="lead fw-bold "> October 8, 2021</h3>
+                    <h3 class="lead fw-bold"> 12 songs</h3>
+                    <h3 class="lead fw-bold"> 26 minutes</h3>
+                    <p class="lead mt-1">
+                        In the process of making my first album, I had a <em>lot</em> of outtakes. I
+                        was just learning how to record my guitar and bass through my audio interface, and at this
+                        point I hadn't picked up my guitar in months. At a lot of these beats are unfinished ideas or
+                        melodies that I heard in my head and recorded, so take it with a grain of salt if you hear some
+                        poor mixes and masters. My favourite beat, at the time, was 'Celeste', with its fat kicks and
+                        almost ethereal feel (that's how I felt it). This demo tape is kind of a mess, but it represents
+                        my time surrounding the release of 'Yeah Okay'. Cover art by me (it's just my LEGO mug).
+                    </p>
+                    <div class="row justify-content-between gap-2">
+                        <div class="col-md">
+                            <button type="button" class="btn btn-light text-nowrap">
+                                <a class="btn btn-light btn-sm"
+                                   href="https://distrokid.com/hyperfollow/mikster36/donnie-darko-demos-2"
+                                   target="_blank">Listen Now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between mb-lg-5">
+                <!-- Delight -->
+                <div class="col-lg">
+                    <img src="media/delight%20song%20cover.jpg" class="img-fluid mb-3" alt="">
+                </div>
+                <div class="col-lg mt-1 mx-3">
+                    <h1 class="display-4 mb-1">Delight (ft. Jade Russian)</h1>
+                    <h3 class="lead fw-bold "> March 25, 2022</h3>
+                    <h3 class="lead fw-bold"> Single</h3>
+                    <h3 class="lead fw-bold"> 2 minutes</h3>
+                    <p class="lead mt-1">
+                        Here we go. My first single. Finally got a voice to my beats. A real good one, too. Jade Russian–with
+                        her ever beautiful voice–delivers a stunning performance on this one. By this point, I had a new
+                        keyboard with which I'd been practising with for a while. I recorded everything on this one, and
+                        Jade delivered everything so quickly and with such passion. Her beautiful harmonies overlay the
+                        smooth melody, and my personal favourite part is the bridge. Cover art is by Jade Russian.
+                    </p>
+                    <div class="row justify-content-between gap-2">
+                        <div class="col-md">
+                            <button type="button" class="btn btn-light text-nowrap">
+                                <a class="btn btn-light btn-sm"
+                                   href="https://distrokid.com/hyperfollow/mikster36/delight-feat-jade-russian"
+                                   target="_blank">Listen Now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutoring -->
+    <section id="Tutoring" class="bg-light p-5 text-left">
+        <div class="container">
+            <div class="row justify-content-between mb-5">
+                <div class="mb-4">
+                    <h1 class="display-2">
+                        Tutoring
+                    </h1>
+                </div>
+                <div class="col-lg mt-1 me-3 mb-3">
+                    <p class="lead">
+                        I tutor, as well! I love tutoring mathematics. Particularly, I help with SAT/ACT preparation
+                        (I scored a 35), Calculus I & II (or AP Calculus AB/BC), Statistics, College Algebra,
+                        Trigonometry, Discrete Mathematics (basics), Geometry, Algebra I & II, and K-8. I've worked
+                        for almost two years as a tutor. Below I've attached some resources that've helped me through
+                        studying for the ACT & SAT; I am in no way personally connected to these sites.
+                    </p>
+                    <p class="lead fw-bold mt-lg-5">
+                        Some helpful links
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.crackacc.com/" target="_blank">CrackACC (formerly CrackACT)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cracksat.net/index.html" target="_blank">CrackSAT (still CrackSAT)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dropbox.com/sh/05qmv1s8txrlgao/AABXipn9E_6aeBc6OH7bhNg0a?dl=0"
+                               target="_blank">Tons of past ACT exams</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dropbox.com/sh/fl4d7vyv09z0pzi/AAAd7tblEzFZWftbtu3bw1Y-a?dl=0" target="_blank">Tons of past SAT exams</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.khanacademy.org/SAT" target="_blank">Khan Academy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.reddit.com/r/ACT/comments/c485fk/my_act_experience_tips_and_tricks_that_will/"
+                               target="_blank">Some ACT tips</a>
+                        </li>
+                        <li>
+                            <a href="https://www.reddit.com/r/Sat/comments/9a0yuy/some_last_minute_tips/" target="_blank">Some SAT tips</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <img src="media/mastershake.jpg" class="img-fluid mb-3 " alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="Contact Me" class="bg-dark text-white p-5 text-center">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="display-2 pb-3"> Contact Me</h1>
+                    <ul class="list-unstyled text-start">
+                        <li class="lead font-monospace">Email:
+                            <a href="mailto: michaelrortega@pm.me" class="link-light">michaelrortega@pm.me</a></li>
+                        <li class="lead font-monospace">
+                            Phone:
+                            <a href="tel:954-296-8027" class="link-light">954-296-8027</a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled text-start">
+                        <li>
+                            <h3 class="font-monospace">
+                                Socials
+                            </h3>
+                        </li>
+                        <li class="lead font-monospace">
+                            <a href="https://www.linkedin.com/in/michael-ortega-5251b5237/" class="link-light">LinkedIn</a>
+                        </li>
+                        <li class="lead font-monospace">
+                            <a href="https://github.com/mikster36" class="link-light">GitHub</a>
+                        </li>
+                        <li class="lead font-monospace">
+                            <a href="https://www.instagram.com/michaelortega45/" class="link-light">Instagram</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

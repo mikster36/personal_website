@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="blog/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="blog/favicon-16x16.png">
+    <link rel="manifest" href="blog/site.webmanifest">
+    <title>Michael Ortega — Blog</title>
+</head>
+
+<body>
+<div class="container mt-lg-5">
+    <h1 class="font-monospace">
+        I <em>love</em> food
+    </h1>
+    <p class="pt-2 font-monospace me-lg-auto-5">
+        sometimes, it's all i dream about.
+        other times, it's all i need to think about to fall asleep.a sdf asdf asdfa sdfa sdfa sdf ad asdf asdf asdf asdf asdf asdf asdf asdf asd f
+        <br>here's a calzone I made
+    </p>
+    <div class="row">
+        <div class="col-md-5">
+            <img src="blog/media/calzone_top.jpg"
+                 class="img-fluid mt-1"
+                 alt="delicious mac n cheese calzone"
+                 id="calzone1"
+                 onclick="Image(item=0)">
+        </div>
+        <div class="col-md-5">
+            <img src="blog/media/calzone_front.jpg"
+                 class="img-fluid mt-1"
+                 alt="delicious mac n cheese calzone"
+                 id="calzone2"
+                 onclick="Image(item=1)">
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    var imgs = document.getElementsByTagName("IMG");
+    class Image{
+        constructor(item){
+            this.enlarged = false;
+            Image.enlargeImg(item);
+        }
+        static enlargeImg(item_no) {
+
+            if (!this.enlarged) {
+                imgs[item_no].style.transform = "scale(1.5)";
+                imgs[item_no].style.transition = "transform 0.25s ease";
+                this.enlarged = true;
+            }
+            else {
+                this.resetImg(item_no)
+            }
+        }
+        resetImg(item_no) {
+            imgs[item_no].style.transform = "scale(1)";
+            imgs[item_no].style.transition = "transform 0.25s ease";
+            this.enlarged = false;
+        }
+        isEnlarged() {
+            return this.enlarged
+        }
+    }
+
+
+</script>
+
+</body>
+
+</html>

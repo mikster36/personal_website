@@ -1,0 +1,63 @@
+.header {
+    color: #74c48f;
+}
+
+.box {
+    width: 300px;
+    border: 3px solid #75c490;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.link-dark {
+    text-decoration: none;
+}
+
+.link-dark:hover {
+    font-weight: 900;
+}
+
+.enlarged {
+    font-size: 160%;
+    display:inline-block;
+}
+
+.enlarged:hover {
+    transform: scale(1.25);
+}
+
+.link {
+    color: #74c48f;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #74c48f;
+}
+
+/* fix this maybe? */
+.font-monospace {
+    font-size: 105%;
+}
+
+.small {
+    font-size: 90%;
+}
+
+.large-icon {
+    font-size: 350%;
+}
+
+/*
+ul.icon li:before {
+    font-family: bootstrap-icons, serif;
+    content: "\F6FE";
+    float: left;
+}
+*/
+
+#bio {
+    font-size: 105%;
+}
