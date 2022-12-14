@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
@@ -132,45 +132,45 @@
                     </div>
                     <div class="row row-1 mt-5 justify-content-center">
                         <div class="col-sm-8">
-                            <h1 class="header display-6 fw-bold">
+                            <h1 class="header display-6 fw-bold text-center text-md-start">
                                 Education
                             </h1>
-                            <ul class="icon list-group-flush list-inline mt-3 ">
+                            <div class="icon list-group-flush list-inline mt-3 ">
                                 <div class="container justify-content-start">
                                     <div class="row">
                                         <i class="col-1 align-self-center bi-mortarboard-fill"> </i>
                                         <div class="col">
-                                            <li class="mt-2 font-monospace fw-bold">
+                                            <h2 class="mt-2 font-monospace fw-bold">
                                                 Candidate for BCompSc, Graduating 2026
-                                            </li>
-                                            <li class="mt-1 font-monospace small">
+                                            </h2>
+                                            <h2 class="mt-1 font-monospace small">
                                                 Georgia Institute of Technology
-                                            </li>
+                                            </h2>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="container justify-content-start">
+                                <div class="container justify-content-start mb-5">
                                     <div class="row">
-                                        <i class="col-1 align-self-center bi-mortarboard-fill"> </i>
+                                        <i class="col-1 align-self-center bi-mortarboard-fill"></i>
                                         <div class="col">
-                                            <li class="mt-2 font-monospace fw-bold">
+                                            <h2 class="mt-2 font-monospace fw-bold">
                                                 Associate of Arts, Jan 2019 - May 2022
-                                            </li>
-                                            <li class="mt-1 font-monospace small">
+                                            </h2>
+                                            <h2 class="mt-1 font-monospace small">
                                                 Broward College
-                                            </li>
+                                            </h2>
                                         </div>
                                     </div>
 
                                 </div>
-                            </ul>
+                            </div>
                         </div>
-                        <div class="box col-sm">
-                            <h1 class="header display-6 mt-1 fw-bold">
+                        <div class="box col-sm ">
+                            <h1 class="header display-6  fw-bold">
                                 Interests
                             </h1>
-                            <ul class="list-group-flush text-start ms-2 mt-3">
+                            <ul class="list-group-flush text-start ms-2 mt-1">
                                 <li class="list-group-item-light font-monospace">
                                     Machine learning
                                 </li>
@@ -261,16 +261,17 @@
             </div>
             <div class="row justify-content-between my-lg-5">
                 <div class="col-lg">
-                    <div class="card">
+                    <div class="personal card">
                         <div class="card-body">
                             <h5 class="card-title">
                                 DownBadBot
+                                <i class="bi bi-person-fill"></i>
                             </h5>
                             <p class="card-text my-3 font-monospace">
                                 Twitter bot that posts the music I listen to.
                             </p>
                             <button type="button" onclick="window.open('https://github.com/mikster36/downBadBot', '_blank')" class="btn btn-light mb-4 font-monospace">
-                                <i class="bi bi-git "></i> Source code
+                                <i class="text-dark bi bi-git "></i> Source code
                             </button>
                             <a class="twitter-timeline my-2" data-height="570vw" href="https://twitter.com/downbadbot?ref_src=twsrc%5Etfw">
                                 Tweets by downbadbot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -279,15 +280,25 @@
                     </div>
                 </div>
                 <div class="col-lg">
-                    <div class="card">
+                    <div class="collaborative card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Work in Progress
+                                Parkinson's Disease Detection
+                                <i class="bi bi-people-fill"></i>
                             </h5>
-                            <p class="card-text">
-                                I promise. I'm busy.
+                            <p class="card-text my-3 font-monospace">
+                                A collection of machine learning models using TensorFlow and Scikit-learn built on a collection
+                                of cognitive and behavioral testing from the <a href="https://www.ppmi-info.org/" class="link">PPMI</a> database.
+                                Some methods used include
+                                <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="link">CNNs</a>,
+                                <a href="https://en.wikipedia.org/wiki/XGBoost" class="link">XGBoost</a>, and
+                                <a href="https://en.wikipedia.org/wiki/Support_vector_machine" class="link">SVMs</a>.
+                                This project is currently ongoing with more testing and the development of a web application.
                             </p>
-                            <img src="media/brb.jpg" class="img-fluid" alt="">
+                            <button type="button" class="btn btn-light mb-4 font-monospace">
+                                <i class="text-dark bi bi-git "></i> Source code
+                            </button>
+                            <img src="media/spiral%20test%20example.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="card mt-lg-3">
