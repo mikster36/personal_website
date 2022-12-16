@@ -125,7 +125,8 @@
                             sustainability.<br><br>
                             I plan to pursue a Master's in CS and, eventually, a PhD in Machine Learning.<br><br>
                             I care about collaborating, learning, and finding solutions to even the smallest things. In
-                            my free time, I enjoy producing <a href="https://mikster36.bandcamp.com/" class="link">music</a> and skateboarding.
+                            my free time, I enjoy producing <a href="https://mikster36.bandcamp.com/" class="link">music</a>,
+                            skateboarding and baking.
                         </p>
 
 
@@ -260,19 +261,19 @@
                 </h1>
             </div>
             <!-- work on this -->
-            <div class="ms-2 text-start mb-2 mb-sm-3">
-                <div class="btn-group" role="group">
+            <div class="ms-2 text-start mb-3">
+                <div id="btn group" class="btn-group" role="group">
                     <button autofocus type="button" onclick="filterSelection('all')"
-                            class="btn btn-outline-dark font-monospace">All</button>
+                            class="filter btn btn-outline-dark font-monospace">All</button>
                     <button type="button" onclick="filterSelection('personal')"
-                            class="btn btn-outline-dark font-monospace">Personal</button>
+                            class="filter btn btn-outline-dark font-monospace">Personal</button>
                     <button type="button" onclick="filterSelection('collaborative')"
-                            class="btn btn-outline-dark font-monospace">Collaborative</button>
+                            class="filter btn btn-outline-dark font-monospace">Collaborative</button>
                 </div>
 
             </div>
             <div class="row justify-content-between mt-lg-3 mb-lg-5">
-                <div class="col-lg">
+                <div class="col-lg mb-3">
                     <div class="personal card">
                         <div class="card-body">
                             <h5 class="card-title mt-2">
@@ -281,7 +282,7 @@
                             </h5>
                             <p class="card-text my-3 font-monospace">
                                 A Twitter bot that posts the music I listen to. The data is fetched using the
-                                <a href="https://www.last.fm/" class="link">LastFM</a> API
+                                <a href="https://www.last.fm/" class="link">LastFM API</a>
                                 and continuously updated using a Raspberry PI server.
                             </p>
                             <button type="button" onclick="window.open('https://github.com/mikster36/downBadBot', '_blank')"
@@ -310,110 +311,30 @@
                                 <a href="https://en.wikipedia.org/wiki/Support_vector_machine" class="link">SVMs</a>.
                                 This project is currently ongoing with more testing and the development of a web application.
                             </p>
-                            <button type="button" class="btn btn-light mb-4 font-monospace">
-                                <i class="text-dark bi bi-git "></i> Source code
-                            </button>
+                            <div class="row px-auto justify-content-center">
+                                <div class="col-auto ">
+                                    <button type="button" class="btn btn-light mb-4 font-monospace">
+                                        <i class="text-dark bi bi-git"></i> Source code
+                                    </button>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" onclick="window.open('https://www.mayoclinic.org/diseases-conditions/parkinsons-disease/diagnosis-treatment/drc-20376062', '_blank')"
+                                            class="btn btn-light mb-4 font-monospace">
+                                        <i class="bi bi-info-circle-fill"></i> More info
+                                    </button>
+                                </div>
+                            </div>
                             <img src="media/spiral%20test%20example.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row justify-content-between mb-5">
 
-                <!-- Yeah Okay -->
-                <div class="col-lg">
-                    <img src="media/album%20cover.jpg" class="img-fluid mb-3" alt="">
-                </div>
-                <div class="col-lg mt-1 mx-3">
-                    <h1 class="display-4 mb-2">Yeah Okay</h1>
-                    <h3 class="lead fw-bold "> September 5, 2021</h3>
-                    <h3 class="lead fw-bold"> 18 songs</h3>
-                    <h3 class="lead fw-bold"> 28 minutes</h3>
-                    <p class="lead mt-2">
-                        This is my first album. Although it's composed entirely of beats, it's more so an album
-                        than it is a beat tape due to its structure and composition. I made these beats in my bedroom
-                        during the summer of 2021, during quarantine, when I was first getting the hang of producing.
-                        I played the bass on 'Discipline', 'Midnight on the Moon', 'Eternal' (the second half of 'Other
-                        Planets / Eternal'). I programmed the drums on all tracks except "Tribe's Drums" and 'Traveling'.
-                        The beats draw heavily on foreign samples from the 70s, 80s and 90s, including 'The Mail Troika'
-                        by Melodia and 'Sihirbaz' by Gökçen Kaynatan. Cover art by me.
-                    </p>
-                    <div class="row justify-content-between gap-2">
-                        <div class="col-md">
-                            <button type="button" class="btn btn-light text-nowrap">
-                                <a class="btn btn-light btn-sm"
-                                   href="https://distrokid.com/hyperfollow/mikster36/yeah-okay"
-                                   target="_blank">Listen Now</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-between mb-5">
-                <!-- Donnie Darko Demos -->
-                <div class="col-lg">
-                    <img src="media/donnie%20darko%20demos.jpg" class="img-fluid mb-3" alt="">
-                </div>
-                <div class="col-lg mt-1 mx-3">
-                    <h1 class="display-4 mb-1">Donnie Darko Demos</h1>
-                    <h3 class="lead fw-bold "> October 8, 2021</h3>
-                    <h3 class="lead fw-bold"> 12 songs</h3>
-                    <h3 class="lead fw-bold"> 26 minutes</h3>
-                    <p class="lead mt-1">
-                        In the process of making my first album, I had a <em>lot</em> of outtakes. I
-                        was just learning how to record my guitar and bass through my audio interface, and at this
-                        point I hadn't picked up my guitar in months. At a lot of these beats are unfinished ideas or
-                        melodies that I heard in my head and recorded, so take it with a grain of salt if you hear some
-                        poor mixes and masters. My favourite beat, at the time, was 'Celeste', with its fat kicks and
-                        almost ethereal feel (that's how I felt it). This demo tape is kind of a mess, but it represents
-                        my time surrounding the release of 'Yeah Okay'. Cover art by me (it's just my LEGO mug).
-                    </p>
-                    <div class="row justify-content-between gap-2">
-                        <div class="col-md">
-                            <button type="button" class="btn btn-light text-nowrap">
-                                <a class="btn btn-light btn-sm"
-                                   href="https://distrokid.com/hyperfollow/mikster36/donnie-darko-demos-2"
-                                   target="_blank">Listen Now</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-between mb-lg-5">
-                <!-- Delight -->
-                <div class="col-lg">
-                    <img src="media/delight%20song%20cover.jpg" class="img-fluid mb-3" alt="">
-                </div>
-                <div class="col-lg mt-1 mx-3">
-                    <h1 class="display-4 mb-1">Delight (ft. Jade Russian)</h1>
-                    <h3 class="lead fw-bold "> March 25, 2022</h3>
-                    <h3 class="lead fw-bold"> Single</h3>
-                    <h3 class="lead fw-bold"> 2 minutes</h3>
-                    <p class="lead mt-1">
-                        Here we go. My first single. Finally got a voice to my beats. A real good one, too. Jade Russian–with
-                        her ever beautiful voice–delivers a stunning performance on this one. By this point, I had a new
-                        keyboard with which I'd been practising with for a while. I recorded everything on this one, and
-                        Jade delivered everything so quickly and with such passion. Her beautiful harmonies overlay the
-                        smooth melody, and my personal favourite part is the bridge. Cover art is by Jade Russian.
-                    </p>
-                    <div class="row justify-content-between gap-2">
-                        <div class="col-md">
-                            <button type="button" class="btn btn-light text-nowrap">
-                                <a class="btn btn-light btn-sm"
-                                   href="https://distrokid.com/hyperfollow/mikster36/delight-feat-jade-russian"
-                                   target="_blank">Listen Now</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Tutoring -->
-    <section id="Tutoring" class="bg-light p-5 text-left">
+    <!-- Future -->
+    <section id="Future" class="bg-light p-5 text-left">
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <div class="mb-4">
