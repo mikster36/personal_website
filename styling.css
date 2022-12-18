@@ -79,3 +79,12 @@ ul.icon li:before {
 #bio {
     font-size: 105%;
 }
+
+#back-to-top {
+    display:inline-block;
+}
+
+#back-to-top:hover {
+    color: #75c490;
+    transform: scale(1.05);
+}
