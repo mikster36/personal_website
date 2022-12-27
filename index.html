@@ -53,25 +53,6 @@
         </div>
     </nav>
 
-    <!--
-    Intro
-    <section class="bg-light text-dark p-5 text-center">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1 class="display-1"> Michael Ortega</h1>
-                    <p class="lead pt-2 font-monospace">I'm a current Computer science student at Georgia Tech, specializing
-                    in machine learning and data modeling. As I'm minoring in Sustainable cities,
-                    I hope to lead innovation to the fight against climate change.</p>
-                </div>
-                <div class="px-5">
-                    <img class="img-fluid d-none d-md-block" src="media/bounce.gif" alt=""/>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
     <!-- About Me -->
     <section id="About Me" class="bg-white p-5 text-left">
         <div class="container">
@@ -260,18 +241,18 @@
                 </h1>
             </div>
             <!-- work on this -->
-            <div class="ms-2 text-start mb-3">
-                <div id="btn group" class="btn-group" role="group">
-                    <button autofocus type="button" onclick="filterSelection('all')"
-                            class="filter btn btn-outline-dark font-monospace">All</button>
-                    <button type="button" onclick="filterSelection('personal')"
-                            class="filter btn btn-outline-dark font-monospace">Personal</button>
-                    <button type="button" onclick="filterSelection('collaborative')"
-                            class="filter btn btn-outline-dark font-monospace">Collaborative</button>
+            <div class="ms-md-4 text-center text-md-start mb-3">
+                <div id="btn group" class="btn-group btn-group-toggle" role="group">
+                    <button autofocus type="button" onclick="remove_cards()"
+                            class="btn btn-outline-dark font-monospace">All</button>
+                    <button type="button" onclick="remove_cards('personal')"
+                            class="btn btn-outline-dark font-monospace">Personal</button>
+                    <button type="button" onclick="remove_cards('collaborative')"
+                            class="btn btn-outline-dark font-monospace">Collaborative</button>
                 </div>
 
             </div>
-            <div class="row justify-content-between mt-lg-3 mb-lg-5">
+            <div class="container row justify-content-between mt-lg-3 mb-lg-5">
                 <div class="col-lg mb-3">
                     <div class="personal card">
                         <div class="card-body">
@@ -287,6 +268,10 @@
                             <button type="button" onclick="window.open('https://github.com/mikster36/downBadBot', '_blank')"
                                     class="btn btn-light mb-4 font-monospace">
                                 <i class="text-dark bi bi-git"></i> Source code
+                            </button>
+                            <button type="button" onclick="window.open('https://www.last.fm/user/Mikster36', '_blank')"
+                                    class="btn btn-light mb-4 font-monospace ms-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.584 17.209l-.88-2.392s-1.43 1.595-3.573 1.595c-1.897 0-3.244-1.65-3.244-4.289 0-3.381 1.704-4.591 3.382-4.591 2.419 0 3.188 1.567 3.849 3.574l.88 2.75c.879 2.667 2.528 4.811 7.284 4.811 3.409 0 5.719-1.044 5.719-3.793 0-2.227-1.265-3.381-3.629-3.932l-1.76-.385c-1.209-.275-1.566-.77-1.566-1.594 0-.935.742-1.485 1.952-1.485 1.319 0 2.034.495 2.144 1.677l2.749-.33c-.22-2.474-1.924-3.491-4.729-3.491-2.474 0-4.893.935-4.893 3.931 0 1.87.907 3.052 3.188 3.602l1.869.439c1.402.33 1.869.907 1.869 1.705 0 1.017-.989 1.43-2.858 1.43-2.776 0-3.932-1.457-4.591-3.464l-.907-2.749c-1.155-3.574-2.997-4.894-6.653-4.894-4.041-.001-6.186 2.556-6.186 6.899 0 4.179 2.145 6.433 5.993 6.433 3.107.001 4.591-1.457 4.591-1.457z"/></svg> Last.fm
                             </button>
                             <a class="twitter-timeline my-2" data-height="570vw" href="https://twitter.com/downbadbot?ref_src=twsrc%5Etfw">
                                 Tweets by downbadbot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -310,20 +295,15 @@
                                 <a href="https://en.wikipedia.org/wiki/Support_vector_machine" class="link">SVMs</a>.
                                 This project is currently ongoing with more testing and the development of a web application.
                             </p>
-                            <div class="row px-auto justify-content-center">
-                                <div class="col-auto ">
-                                    <button type="button" class="btn btn-light mb-4 font-monospace">
-                                        <i class="text-dark bi bi-git"></i> Source code
-                                    </button>
-                                </div>
-                                <div class="col-auto">
-                                    <button type="button" onclick="window.open('https://www.mayoclinic.org/diseases-conditions/parkinsons-disease/diagnosis-treatment/drc-20376062', '_blank')"
-                                            class="btn btn-light mb-4 font-monospace">
-                                        <i class="bi bi-info-circle-fill"></i> More info
-                                    </button>
-                                </div>
-                            </div>
-                            <img src="media/spiral%20test%20example.jpg" class="img-fluid" alt="">
+                            <button type="button" onclick="window.open('https://gist.github.com/mikster36/018e111a1230f175dde97b686f6b52f1', '_blank')"
+                                    class="btn btn-light mb-4 font-monospace">
+                                <i class="text-dark bi bi-git"></i> Source code
+                            </button>
+                            <button type="button" onclick="window.open('https://www.mayoclinic.org/diseases-conditions/parkinsons-disease/diagnosis-treatment/drc-20376062', '_blank')"
+                                    class="btn btn-light mb-4 ms-2 font-monospace">
+                                <i class="bi bi-info-circle-fill"></i> More info
+                            </button>
+                            <img src="media/spiral%20test%20example.jpg" class="img-fluid" alt="A poor drawing of a spiral on top of an Archimedean spiral">
                         </div>
                     </div>
                 </div>
@@ -354,10 +334,9 @@
         </a>
     </section>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>

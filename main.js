@@ -1,47 +1,29 @@
-filterSelection('all');
-function filterSelection(c) {
-    let x, i;
-    x = document.getElementsByClassName("card");
-    if (c === "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-        removeClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-}
+var cards = document.getElementsByClassName("card");
 
-// Show filtered elements
-function addClass(element, name) {
-    let i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) === -1) {
-            element.className += " " + arr2[i];
+function remove_cards(x = "all") {
+    if (x === "all") {
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].style.display = null;
+        }
+    }
+    else if (x === "personal"){
+        hide_all();
+        var personal = document.getElementsByClassName(x);
+        for (var i = 0; i < personal.length; i++) {
+            personal[i].style.display = null;
+        }
+    }
+    else {
+        hide_all();
+        var collaborative = document.getElementsByClassName(x);
+        for (var i = 0; i < collaborative.length; i++) {
+            collaborative[i].style.display = null;
         }
     }
 }
 
-// Hide elements that are not selected
-function removeClass(element, name) {
-    let i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
+function hide_all() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].style.display = "none";
     }
-    element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-const btnContainer = document.getElementById("btn group");
-const btns = btnContainer.getElementsByClassName("filter");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        let current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
 }
