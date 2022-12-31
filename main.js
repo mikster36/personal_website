@@ -4,6 +4,9 @@ function remove_cards(x = "all") {
     if (x === "all") {
         for (var i = 0; i < cards.length; i++) {
             cards[i].style.display = null;
+            if (!cards[i].parentElement.classList.contains("col-lg")){
+                cards[i].parentElement.classList.add("col-lg");
+            }
         }
     }
     else if (x === "personal"){
@@ -18,6 +21,9 @@ function remove_cards(x = "all") {
         var collaborative = document.getElementsByClassName(x);
         for (var i = 0; i < collaborative.length; i++) {
             collaborative[i].style.display = null;
+            if (collaborative[i].parentElement.classList.contains("col-lg")){
+                collaborative[i].parentElement.classList.remove("col-lg");
+            }
         }
     }
 }
@@ -25,5 +31,14 @@ function remove_cards(x = "all") {
 function hide_all() {
     for (var i = 0; i < cards.length; i++) {
         cards[i].style.display = "none";
+    }
+}
+
+function toggle_col(element) {
+    if (element.classList.contains("col-lg")) {
+            element.classList.remove("col-lg");
+        }
+    else {
+        element.classList.add("col-lg");
     }
 }

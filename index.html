@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
     <link rel="manifest" href="media/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Michael Ortega — Portfolio</title>
 
 </head>
@@ -240,7 +241,6 @@
                     Projects
                 </h1>
             </div>
-            <!-- work on this -->
             <div class="ms-md-4 text-center text-md-start mb-3">
                 <div id="btn group" class="btn-group btn-group-toggle" role="group">
                     <button autofocus type="button" onclick="remove_cards()"
@@ -252,9 +252,9 @@
                 </div>
 
             </div>
-            <div class="container row justify-content-between mt-lg-3 mb-lg-5">
-                <div class="col-lg mb-3">
-                    <div class="personal card">
+            <div id="Card container" class="container row justify-content-between mt-lg-3 mb-lg-5">
+                <div class="col-lg">
+                    <div class="personal card" style="max-width: 37.5em">
                         <div class="card-body">
                             <h5 class="card-title mt-2">
                                 DownBadBot
@@ -279,8 +279,8 @@
 
                     </div>
                 </div>
-                <div class="col-lg">
-                    <div class="collaborative card">
+                <div class="col-lg mb-3 mb-lg-1">
+                    <div class="collaborative card mt-lg-0 mt-3" style="max-width: 37.5em">
                         <div class="card-body">
                             <h5 class="card-title mt-2">
                                 Parkinson's Disease Detection
