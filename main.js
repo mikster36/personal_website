@@ -42,3 +42,20 @@ function toggle_col(element) {
         element.classList.add("col-lg");
     }
 }
+
+$(document).ready(function(){
+    if (window.innerWidth <= 576) {
+        var btns = document.getElementById("btn group");
+        btns.classList.add("btn-group-sm");
+    }
+});
+
+$(window).resize(function(){
+    var btns = document.getElementById("btn group");
+    if (window.innerWidth <= 576){
+        btns.classList.add("btn-group-sm");
+    }
+    else {
+        btns.classList.remove("btn-group-sm");
+    }
+});
