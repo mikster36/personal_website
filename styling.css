@@ -87,3 +87,7 @@
     color: #75c490;
     transform: scale(1.05);
 }
+
+#more {
+    display: none;
+}

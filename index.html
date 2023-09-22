@@ -123,7 +123,7 @@
                                         <i class="col-1 align-self-center bi-mortarboard-fill"> </i>
                                         <div class="col">
                                             <h2 class="mt-2 font-monospace fw-bold">
-                                                Candidate for BCompSc, Graduating 2024
+                                                BCompSc Candidate, Graduating Winter 2024
                                             </h2>
                                             <h2 class="mt-1 font-monospace small">
                                                 Georgia Institute of Technology
@@ -253,18 +253,54 @@
 
             </div>
             <div id="Card container" class="container-fluid">
-                <div class="row row-cols-1 row-cols-lg-2 justify-content-center p-0 p-lg-3 mt-lg-3 mb-lg-5">
-                    <div class="col-lg">
+                <div class="row row-cols-1 row-cols-lg-2 justify-content-start p-0 p-lg-3 mt-lg-3 mb-lg-5">
+                    <div class="flex-lg-column mb-3 mb-lg-1">
+                        <div class="collaborative card mt-lg-0 " style="max-width: 37.5em">
+                            <div class="card-body">
+                                <h5 class="card-title mt-2">
+                                    Cichlid Behavior Classification
+                                    <i class="bi bi-people-fill"></i>
+                                </h5>
+                                <h6 class="card-subtitle mt-1" style="color: #7dd299">
+                                    ((current major project))
+                                </h6>
+                                <p class="card-text my-3 font-monospace">
+                                    A <a href="https://deeplabcut.github.io/DeepLabCut/README.html#welcome" class="link">DeepLabCut</a> + neural network that
+                                    classifies mating mechanisms and other important behavioral interactions between male and female cichlids.
+                                    Currently, we are optimizing a pose estimation model trained on our lab data and creating our behavioral dataset.
+                                    In the next steps, we will begin researching and developing the architecture for our network.
+                                    <em>This project is supported by the <a href="https://mcgrathlab.biosci.gatech.edu/" class="link">McGrath Lab</a>
+                                    in the school of Biological Sciences at Georgia Tech.</em>
+                                </p>
+                                <button type="button" class="btn btn-light mb-4 font-monospace" onclick="window.open('https://github.com/mikster36/cichlid-behavior-detection', '_blank')">
+                                    <i class="text-dark bi bi-git"></i>
+                                    Source code
+                                </button>
+                                <button type="button"
+                                        class="btn btn-light mb-4 ms-2 font-monospace" onclick="window.open('media/climate_science_workshop_poster.pdf', '_blank')">
+                                    <i class="bi bi-info-circle-fill"></i>
+                                    More info
+                                </button>
+                                <img src="media/dlc_clip.gif" class="img-fluid p-3" alt="A poor drawing of a spiral on top of an Archimedean spiral">
+                                <em class="card-text my-3 font-monospace mb-5"><strong>Figure 1:</strong> Unfiltered predictions on a short clip of our cichlids.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-lg-column">
                         <div class="personal card mb-3" style="max-width: 37.5em">
                             <div class="card-body">
                                 <h5 class="card-title mt-2">
                                     DownBadBot
                                     <i class="bi bi-person-fill"></i>
                                 </h5>
+                                <h6 class="card-subtitle mt-1" style="color: #ff7857">
+                                    ((indefinitely out of commission))
+                                </h6>
                                 <p class="card-text my-3 font-monospace">
                                     A Twitter bot that posts the music I listen to. The data is fetched using the
                                     <a href="https://www.last.fm/" class="link">LastFM API</a>
-                                    and continuously updated using a Raspberry PI server. [Currently out of commission]
+                                    and continuously updated using a Raspberry PI server.
                                 </p>
                                 <button type="button" onclick="window.open('https://github.com/mikster36/downBadBot', '_blank')"
                                         class="btn btn-light mb-4 font-monospace">
@@ -274,38 +310,55 @@
                                         class="btn btn-light mb-4 font-monospace ms-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.584 17.209l-.88-2.392s-1.43 1.595-3.573 1.595c-1.897 0-3.244-1.65-3.244-4.289 0-3.381 1.704-4.591 3.382-4.591 2.419 0 3.188 1.567 3.849 3.574l.88 2.75c.879 2.667 2.528 4.811 7.284 4.811 3.409 0 5.719-1.044 5.719-3.793 0-2.227-1.265-3.381-3.629-3.932l-1.76-.385c-1.209-.275-1.566-.77-1.566-1.594 0-.935.742-1.485 1.952-1.485 1.319 0 2.034.495 2.144 1.677l2.749-.33c-.22-2.474-1.924-3.491-4.729-3.491-2.474 0-4.893.935-4.893 3.931 0 1.87.907 3.052 3.188 3.602l1.869.439c1.402.33 1.869.907 1.869 1.705 0 1.017-.989 1.43-2.858 1.43-2.776 0-3.932-1.457-4.591-3.464l-.907-2.749c-1.155-3.574-2.997-4.894-6.653-4.894-4.041-.001-6.186 2.556-6.186 6.899 0 4.179 2.145 6.433 5.993 6.433 3.107.001 4.591-1.457 4.591-1.457z"/></svg> Last.fm
                                 </button>
-                                <a class="twitter-timeline my-2" data-height="570vw" href="https://twitter.com/downbadbot?ref_src=twsrc%5Etfw">
+                                <a class="twitter-timeline my-2" data-height="500vw" href="https://twitter.com/downbadbot?ref_src=twsrc%5Etfw">
                                     Tweets by downbadbot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="col-lg mb-3 mb-lg-1">
-                        <div class="collaborative card mt-lg-0 " style="max-width: 37.5em">
+                    <div class="flex-lg-column mb-3 mb-lg-1">
+                        <div class="collaborative card mt-lg-3 " style="max-width: 37.5em">
                             <div class="card-body">
                                 <h5 class="card-title mt-2">
                                     Parkinson's Disease Detection
                                     <i class="bi bi-people-fill"></i>
                                 </h5>
+                                <h6 class="card-subtitle mt-1" style="color: #7dd299">
+                                    ((completed))
+                                </h6>
                                 <p class="card-text my-3 font-monospace">
-                                    A collection of machine learning models using TensorFlow and Scikit-learn built on a collection
-                                    of cognitive and behavioral testing from the <a href="https://www.ppmi-info.org/" class="link">PPMI</a> database.
+                                    A collection of machine learning models using TensorFlow and Scikit-learn libraries trained on data from
+                                    cognitive and behavioral testing sourced from the <a href="https://www.ppmi-info.org/" class="link">PPMI</a> database.
                                     Some methods used include
                                     <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="link">CNNs</a>,
                                     <a href="https://en.wikipedia.org/wiki/XGBoost" class="link">XGBoost</a>, and
                                     <a href="https://en.wikipedia.org/wiki/Support_vector_machine" class="link">SVMs</a>.
-                                    This project is currently ongoing with more testing and the development of a web application.
+                                    Our most robust model trained on biomedical voice measurements from 219 patients
+                                    performed at 88% accuracy (# correct predictions / # truth).
+                                    I left this project in May 2023 as the semester ended<a id="readMoreDots" class="link" onclick="readMore()">...</a>
                                 </p>
-                                <button type="button" onclick="window.open('https://gist.github.com/mikster36/018e111a1230f175dde97b686f6b52f1', '_blank')"
-                                        class="btn btn-light mb-4 font-monospace">
-                                    <i class="text-dark bi bi-git"></i> Source code
-                                </button>
-                                <button type="button" onclick="window.open('https://www.mayoclinic.org/diseases-conditions/parkinsons-disease/diagnosis-treatment/drc-20376062', '_blank')"
-                                        class="btn btn-light mb-4 ms-2 font-monospace">
-                                    <i class="bi bi-info-circle-fill"></i> More info
-                                </button>
+                                <p class="card-text my-3 font-monospace mb-4" id="more">
+                                    With this project, we intended to develop low-cost solutions to help detect Parkinson's through a variety of tests.
+                                    We chose to develop a model for several cognitive tests that are easily replicable at home, such as the spiral test
+                                    (as pictured below) and Boston naming test.
+                                    However, we struggled with small datasets and general unfamiliarity with a lot of the concepts we were working with.
+                                    In retrospect, we could have done more with our data, e.g. use different architecture, as well as focus more
+                                    deeply on strengthening our models. Of course, it is also possible that these tests (Boston naming test and trail-making test)
+                                    are simply not good indicators of whether someone has Parkinson's.
+
+                                </p>
+                                <div class="row-cols-md-3 my-4 gx-5">
+                                    <button type="button" onclick="window.open('https://gist.github.com/mikster36/018e111a1230f175dde97b686f6b52f1', '_blank')"
+                                            class="btn btn-light font-monospace">
+                                        <i class="text-dark bi bi-git"></i> Source code
+                                    </button>
+                                    <button type="button" onclick="window.open('https://www.mayoclinic.org/diseases-conditions/parkinsons-disease/diagnosis-treatment/drc-20376062', '_blank')"
+                                            class="btn btn-light font-monospace">
+                                        <i class="bi bi-info-circle-fill"></i> More info
+                                    </button>
+                                </div>
                                 <img src="media/spiral%20test%20example.jpg" class="img-fluid" alt="A poor drawing of a spiral on top of an Archimedean spiral">
+                                <em class="card-text my-3 font-monospace mb-5"><strong>Figure 2:</strong> A sample tracing of an Archimedean spiral by a patient with Parkinson's.</em>
                             </div>
                         </div>
                     </div>
@@ -322,7 +375,7 @@
                 Future
             </h1>
             <p class="text-center font-monospace">
-                This site is always a work in progress.
+                This site is always a work in progress...
             </p>
             <div class="text-center">
                 <img src="media/ladder.GIF" class="img-fluid mb-2" alt="animated GIF of a man climbing a spinning ladder made of DNA">
