@@ -72,3 +72,44 @@ function readMore() {
         moreText.style.display = "inline";
     }
 }
+
+// Modal stuff
+
+document.addEventListener('DOMContentLoaded', function () {
+    var mediaLinks = document.querySelectorAll('.media-link');
+    var mediaModal = new bootstrap.Modal(document.getElementById('mediaModal'));
+
+    mediaLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var fileSrc = this.getAttribute('href');
+            var fileType = getFileType(fileSrc);
+
+            if (fileType === 'image') {
+                document.querySelector('#mediaModal .modal-body').innerHTML = '<img src="' + fileSrc
+                + '" class="img-fluid">';
+            } else if (fileType === 'pdf') {
+                document.querySelector('#mediaModal .modal-body').innerHTML = '<embed src="' + fileSrc
+                + '" type="application/pdf" class="embed-responsive-item" height="500" width="100%">';
+            }
+
+            mediaModal.show();
+        });
+    });
+
+    mediaModal._element.addEventListener('hidden.bs.modal', function () {
+        document.querySelector('#mediaModal .modal-body').innerHTML = '';
+    });
+
+    function getFileType(fileSrc) {
+        var fileExtension = fileSrc.split('.').pop().toLowerCase();
+        if (fileExtension === 'png' || fileExtension === 'jpg' || fileExtension === 'jpeg' || fileExtension === 'gif') {
+            return 'image';
+        } else if (fileExtension === 'pdf') {
+            return 'pdf';
+        } else {
+            return 'unknown';
+        }
+    }
+});
