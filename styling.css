@@ -31,6 +31,14 @@
     transform: scale(1.25);
 }
 
+.media-link {
+    display:inline-block;
+}
+
+.media-link:hover {
+    transform: scale(1.05);
+}
+
 .btn-outline-dark {
     border-color: #75c490;
     background-color: #75c490;
